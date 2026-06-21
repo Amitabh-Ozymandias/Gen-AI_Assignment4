@@ -1,26 +1,21 @@
-# Orion - Website Automation Agent
+Orion - Intelligent Website Automation Agent
+By Amitabh Panda, 24BCS 10104
+Overview
 
-## What Orion Does
+Orion is a web automation agent developed with Python and Playwright that can interact with websites without manual input.
 
-Orion is a browser automation agent built using Python and Playwright.
+The agent is capable of:
 
-The agent:
-
-* Opens a browser
-* Navigates to a target website
-* Takes screenshots
-* Scrolls and performs mouse actions
-* Detects the required form on the page
-* Finds the Bug Title and Description fields
-* Fills the fields automatically
-* Submits the form
-* Logs all actions performed by the agent
-
----
-
-## Project Structure
-
-```text
+Launching a browser session
+Visiting a specified webpage
+Capturing screenshots during execution
+Performing scrolling and mouse interactions
+Identifying target forms on the page
+Locating Bug Title and Description input fields
+Automatically entering form data
+Submitting forms
+Recording all actions through detailed logs
+Project Directory Structure
 orion-main/
 ├── agent/
 ├── tools/
@@ -29,87 +24,57 @@ orion-main/
 ├── logs/
 ├── main.py
 └── requirements.txt
-```
+Prerequisites
 
----
+Before running Orion, ensure the following are installed:
 
-## Requirements
-
-* Python 3
-* Playwright
-
----
-
-## Installation
-
-Create a virtual environment:
-
-```bash
+Python 3.x
+Playwright
+Setup Instructions
+1. Create a Virtual Environment
 python -m venv venv
-```
+2. Activate the Environment
 
-Activate the environment:
+Linux/macOS:
 
-```bash
 source venv/bin/activate
-```
 
-Install dependencies:
+Windows:
 
-```bash
+venv\Scripts\activate
+3. Install Required Packages
 pip install -r requirements.txt
-```
-
-Install Playwright browser:
-
-```bash
+4. Install Playwright Browsers
 playwright install
-```
+Execution
 
----
+Start the automation agent with:
 
-## Running Orion
-
-Run:
-
-```bash
 python main.py
-```
 
-The agent will automatically:
+Once executed, Orion will:
 
-1. Open the browser
-2. Navigate to the target page
-3. Find the form
-4. Fill the fields
-5. Submit the form
-6. Save screenshots
-7. Save execution logs
+Launch a browser instance
+Navigate to the configured website
+Detect the relevant form
+Populate the required fields
+Submit the form automatically
+Capture screenshots of key steps
+Generate execution logs
+Generated Outputs
+Screenshots
 
----
+Execution screenshots are stored in:
 
-## Output
-
-### Screenshots
-
-All screenshots are saved inside:
-
-```text
 screenshots/
-```
+Logs
 
-### Logs
+Detailed activity logs are available at:
 
-Execution logs are saved inside:
-
-```text
 logs/automation.log
-```
+Tech Stack
+Python
+Playwright
+Python Logging Framework
 
----
-
-## Technologies Used
-
-* Python
-* Playwright
-* Logging Module
+Orion demonstrates automated browser interaction by intelligently navigating web pages, identifying form elements, entering information, and tracking every action performed during execution.
